@@ -261,3 +261,46 @@
     
     ![Top 15 Feature Importance](/assets/top_15_feature_importances.png)
 
+## 📁 Project Structure
+
+```text
+british-airways-data-science/
+├── src/                            # Core Python modules for the ML pipeline
+│   ├── main.py                     # Entry point; orchestrates the end-to-end pipeline
+│   ├── data_loader.py              # Data loading and initial cleaning
+│   ├── preprocessing.py            # Feature engineering and encoding
+│   ├── model_engine.py             # Model comparison, training, and hyperparameter tuning
+│   ├── model.py                    # Model EDA and evaluation walkthrough
+│   ├── visualizer.py               # Plotting helpers (EDA, feature importance, confusion matrix)
+│   └── customer_booking.csv        # Booking dataset used by the pipeline
+├── notebooks/                      # Jupyter notebooks for exploration and modeling
+│   ├── Getting_Started.ipynb       # Getting-started notebook
+│   ├── model.ipynb                 # Full modeling notebook
+│   ├── model.pdf                   # Exported version of the modeling notebook
+│   ├── customer_booking.csv        # Raw booking data
+│   └── cleaned_customer_boking.csv # Cleaned booking data
+├── data/                           # Processed datasets
+│   └── cleaned_customer_boking.csv # Cleaned booking data
+├── assets/                         # Images used in the README (plots, logos, pipeline)
+├── case-study/                     # PDF case studies for each task
+│   ├── BA_Task_1.pdf               # Lounge demand forecasting case study
+│   └── BA_Task_2.pdf               # Buying behaviour prediction case study
+├── spreadsheets/
+│   ├── British_Airways_Summer_Schedule_Dataset-Forage_Data_Science_Task1.xlsx # Raw Task 1 data
+│   ├── answers/
+│   │   └── Lounge_Eligibility_Lookup_Table.xlsx # Final lookup table and justification
+│   └── template/
+│       └── Lounge_Eligibility_Lookup_Template-Task_1.xlsx # Provided template
+├── coc/
+│   └── certificate_of_completion.pdf # Course completion certificate
+├── main.py                         # Root-level entry stub
+├── index.html
+├── .gitattributes
+├── .gitignore
+├── requirements.txt                # Python dependencies
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+```
+
